@@ -9,7 +9,13 @@ const CardList = ({ info, foo }) => {
     <>
       <div className="card-list">
         {info.map((item) => (
-          <Card title={item.title} content={item.content} foo={foo} />
+          <Card
+            title={item.title}
+            content={item.content}
+            foo={foo}
+            section={item.section}
+            itemInfo={item}
+          />
         ))}
       </div>
     </>

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 import './Card.css'
 
-const Card = ({ title, content, foo }) => {
+const Card = ({ title, section, content, foo, itemInfo }) => {
   // const foo = (param) => {
   //   console.log(param)
   //   return param
   // }
-
+  // console.log(title)
   return (
     <div className="card">
       <img
@@ -20,9 +20,9 @@ const Card = ({ title, content, foo }) => {
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{content}</p>
         <Link
-          to={`/card-content/${title}`}
+          to={`/card-content/${section}`}
           className="btn btn-secondary"
-          onClick={() => foo(title)}
+          onClick={() => foo(itemInfo)}
         >
           Посмотреть информацию
         </Link>

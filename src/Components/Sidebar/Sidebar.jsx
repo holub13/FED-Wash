@@ -4,29 +4,30 @@ import { Link } from 'react-router-dom'
 
 import './Sidebar.css'
 
-const Sidebar = () => {
-  const section = [
-    {
-      name: 'Техпроцесс',
-      id: 'techprocess',
-      path: '/techprocess',
-    },
-    {
-      name: 'Оборудование',
-      id: 'equipment',
-      path: '/equipment',
-    },
-    {
-      name: 'Инструкции',
-      id: 'instruction',
-      path: '/instruction',
-    },
-  ]
+const Sidebar = ({ appState }) => {
+  // console.log(appState)
+  // const section = [
+  //   {
+  //     name: 'Техпроцесс',
+  //     id: 'techprocess',
+  //     path: '/techprocess',
+  //   },
+  //   {
+  //     name: 'Оборудование',
+  //     id: 'equipment',
+  //     path: '/equipment',
+  //   },
+  //   {
+  //     name: 'Инструкции',
+  //     id: 'instruction',
+  //     path: '/instruction',
+  //   },
+  // ]
 
   const [toggleState, setToggelState] = useState('')
 
-  const toggleTab = (id) => {
-    setToggelState(id)
+  const toggleTab = (section) => {
+    setToggelState(section)
   }
 
   return (
@@ -36,15 +37,15 @@ const Sidebar = () => {
     >
       <div className="position-sticky pt-3">
         <ul className="nav flex-column">
-          {section.map((item) => (
+          {appState.map((item) => (
             <li>
               <Link
-                key={item.id}
+                key={item.section}
                 className={
-                  toggleState === item.id ? 'nav-link active' : 'nav-link'
+                  toggleState === item.section ? 'nav-link active' : 'nav-link'
                 }
                 to={item.path}
-                onClick={() => toggleTab(item.id)}
+                onClick={() => toggleTab(item.section)}
               >
                 {item.name}
               </Link>

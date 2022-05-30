@@ -16,7 +16,7 @@ const Content = ({ name, info, foo }) => {
   const filteredTitles = info.filter((item) => {
     return item.title.toLowerCase().includes(searchValue.toLowerCase())
   })
-  // console.log(filteredTitles)
+  // console.log(info)
 
   return (
     <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
