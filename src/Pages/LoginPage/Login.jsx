@@ -1,11 +1,15 @@
 import axios from 'axios'
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Login = ({ appState }) => {
   const [name, setName] = useState('')
   const [path, setPath] = useState('')
   const [section, setSection] = useState('')
   const [id, setId] = useState('')
+  const [title, setTitle] = useState('')
+  // const [itemInfo, setItemInfo] = useState([])
+  // const [info, setInfo] = useState('')
+
   //   const [state, setState] = useState([])
 
   //   useLayoutEffect(() => {
@@ -13,15 +17,89 @@ const Login = ({ appState }) => {
   //   }, [appState])
 
   //   console.log(state)
+  //////////////////////////////
+
+  // async function submitHandler(e) {
+  //   // e.preventDefault()
+  //   const data = { name, path, section, id }
+  //   console.log(data)
+  //   // await setState([data])
+  //   // console.log(data)
+  //   await axios
+  //     .post(`http://localhost:8000/data/`, { ...data })
+  //     .then(function (response) {
+  //       // console.log(response)
+  //     })
+  //     .catch(function (error) {
+  //       // console.log(error.request.status)
+  //       if (error.request.status) {
+  //         axios
+  //           .put('http://localhost:8000/data/' + id, { ...data })
+  //           .then((response) => {
+  //             response.data = data
+  //           })
+  //           .catch((error) => {
+  //             console.log(error)
+  //           })
+  //       }
+  //     })
+  // }
+  //////////////////////////////
+
+  // async function submitHandler(e) {
+  //   e.preventDefault()
+  //   const data = { name, path, section, id }
+  //   // const info = [title]
+  //   console.log(data)
+  //   // await setState([data])
+  //   // console.log(data)
+  //   await axios
+  //     .post(`http://localhost:8000/data/`, { ...data })
+  //     .then(function (response) {
+  //       // console.log(response)
+  //     })
+  //     .catch(function (error) {
+  //       // console.log(error.request.status)
+  //       if (error.request.status) {
+  //         axios
+  //           .put('http://localhost:8000/data/' + id, {
+  //             ...data,
+  //             info: [{ title: title }],
+  //           })
+  //           .then((response) => {
+  //             response.data = data
+  //           })
+  //           .catch((error) => {
+  //             console.log(error)
+  //           })
+  //       }
+  //     })
+  // }
+
+  //////////////////////
 
   async function submitHandler(e) {
-    // e.preventDefault()
+    e.preventDefault()
+    // console.log(itemInfo)
     const data = { name, path, section, id }
-    console.log(data)
-    // await setState([data])
+    let inf = []
+
+    appState.forEach((item) => {
+      if (item.id === id) {
+        item.info.push({ title: title })
+        inf = item.info
+        // setItemInfo(item.info)
+        // console.log(item.info)
+      }
+    })
+
+    // console.log(itemInfo)
+
     // console.log(data)
     await axios
-      .post(`http://localhost:8000/data/`, { ...data })
+      .post(`http://localhost:8000/data/`, {
+        ...data,
+      })
       .then(function (response) {
         // console.log(response)
       })
@@ -29,16 +107,23 @@ const Login = ({ appState }) => {
         // console.log(error.request.status)
         if (error.request.status) {
           axios
-            .put('http://localhost:8000/data/' + id, data)
+            .put(`http://localhost:8000/data/${id}`, {
+              ...data,
+              info: [...inf],
+            })
             .then((response) => {
               response.data = data
+              // console.log(inf)
+              console.log(response)
             })
             .catch((error) => {
-              console.log(error)
+              // console.log(error)
             })
         }
       })
   }
+
+  // console.log(itemInfo)
 
   return (
     <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
@@ -84,6 +169,16 @@ const Login = ({ appState }) => {
           name="id"
           value={id}
           onChange={(e) => setId(e.target.value)}
+        />
+        <br />
+
+        <input
+          className="form-control w-25"
+          placeholder="title"
+          type="text"
+          name="title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <br />
 

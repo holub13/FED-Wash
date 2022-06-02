@@ -1,10 +1,9 @@
 {
   "data": [
     {
-      "name": "Техпроцесс",
-      "section": "techprocess",
-      "component": "TechProcess",
+      "name": "Юлия",
       "path": "/techprocess",
+      "section": "asd345",
       "id": "hLBfRQb",
       "info": [
         {
@@ -46,6 +45,18 @@
           "title": "Bill",
           "cardPath": "8",
           "content": "ТП 8. Some quick example text to build on the card title and make up thebulk of the cards content 8"
+        },
+        {
+          "title": "56"
+        },
+        {
+          "title": "777"
+        },
+        {
+          "title": "s"
+        },
+        {
+          "title": "aa"
         }
       ]
     },
@@ -121,28 +132,10 @@
       ]
     },
     {
-      "name": "Оборудование",
-      "path": "/instruction",
-      "section": "asd",
-      "id": "0isUQw3"
-    },
-    {
-      "name": "Юлия",
-      "path": "/instruction",
-      "section": "asd",
+      "name": "Ivan1",
+      "path": "/techprocess",
+      "section": "asd345",
       "id": "123"
-    },
-    {
-      "name": "Ivan",
-      "path": "/instruction",
-      "section": "asd",
-      "id": "12354"
-    },
-    {
-      "name": "Оборудование",
-      "path": "/path_ivan_jisdofjsdofjosdfj",
-      "section": "asd",
-      "id": "123d"
     }
   ]
 }
