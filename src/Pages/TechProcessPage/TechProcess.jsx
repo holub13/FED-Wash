@@ -9,7 +9,7 @@ const TechProcess = ({ foo, getInfo, appState }) => {
 
   useLayoutEffect(() => {
     appState.map((item) => {
-      if (item.section === 'techprocess') {
+      if (item.id === 'techprocess') {
         setStateTP(item.info)
       }
     })

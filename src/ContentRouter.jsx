@@ -18,6 +18,7 @@ const ContentRouter = ({ appState }) => {
     return info
   }
   // console.log(appState)
+  console.log(itemInfo)
 
   return (
     <Routes>
@@ -39,7 +40,7 @@ const ContentRouter = ({ appState }) => {
         }
       />
       <Route
-        path={`/card-content/${itemInfo.id}`}
+        path={`/card-content/${itemInfo.title}`}
         element={<CardContent itemInfo={itemInfo} />}
       />
       <Route path={`/login`} element={<Login appState={appState} />} />

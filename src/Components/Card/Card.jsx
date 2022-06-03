@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import './Card.css'
 
-const Card = ({ title, section, content, foo, itemInfo }) => {
+const Card = ({ title, content, foo, itemInfo }) => {
   // const foo = (param) => {
   //   console.log(param)
   //   return param
@@ -20,7 +20,7 @@ const Card = ({ title, section, content, foo, itemInfo }) => {
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{content}</p>
         <Link
-          to={`/card-content/${section}`}
+          to={`/card-content/${title}`}
           className="btn btn-secondary"
           onClick={() => foo(itemInfo)}
         >

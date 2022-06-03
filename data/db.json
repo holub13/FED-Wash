@@ -1,10 +1,9 @@
 {
   "data": [
     {
-      "name": "Юлия",
+      "id": "techprocess",
+      "name": "Техпроцессы",
       "path": "/techprocess",
-      "section": "asd345",
-      "id": "hLBfRQb",
       "info": [
         {
           "title": "John",
@@ -47,24 +46,26 @@
           "content": "ТП 8. Some quick example text to build on the card title and make up thebulk of the cards content 8"
         },
         {
-          "title": "56"
+          "title": "1"
         },
         {
-          "title": "777"
+          "title": "33"
         },
         {
-          "title": "s"
+          "title": "123"
         },
         {
-          "title": "aa"
+          "title": "рападлпоад"
+        },
+        {
+          "title": "апвап"
         }
       ]
     },
     {
+      "id": "equipment",
       "name": "Оборудование",
-      "section": "equipment",
       "path": "/equipment",
-      "id": "hLBfRQbdfg",
       "info": [
         {
           "title": "COSDOC",
@@ -90,14 +91,16 @@
           "title": "SdsdfvSFYUFY",
           "cardPath": "5",
           "content": "Оборудование 5. Some quick example text to build on the card title"
+        },
+        {
+          "title": "33222"
         }
       ]
     },
     {
+      "id": "instruction",
       "name": "Инструкции",
-      "section": "instruction",
       "path": "/instruction",
-      "id": "hLBfRQbvbnvb",
       "info": [
         {
           "title": "13321",
@@ -128,14 +131,11 @@
           "title": "SDdasd75064",
           "cardPath": "6",
           "content": "Инструкция 6. Some quick example text to build on the card title"
+        },
+        {
+          "title": "123ввв"
         }
       ]
-    },
-    {
-      "name": "Ivan1",
-      "path": "/techprocess",
-      "section": "asd345",
-      "id": "123"
     }
   ]
 }

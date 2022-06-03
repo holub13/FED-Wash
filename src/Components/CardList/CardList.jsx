@@ -13,7 +13,7 @@ const CardList = ({ info, foo }) => {
             title={item.title}
             content={item.content}
             foo={foo}
-            section={item.section}
+            // cardPath={item.cardPath}
             itemInfo={item}
           />
         ))}

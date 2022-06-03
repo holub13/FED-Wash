@@ -26,8 +26,8 @@ const Sidebar = ({ appState }) => {
 
   const [toggleState, setToggelState] = useState('')
 
-  const toggleTab = (section) => {
-    setToggelState(section)
+  const toggleTab = (id) => {
+    setToggelState(id)
   }
 
   return (
@@ -40,12 +40,12 @@ const Sidebar = ({ appState }) => {
           {appState.map((item) => (
             <li>
               <Link
-                key={item.section}
+                key={item.id}
                 className={
-                  toggleState === item.section ? 'nav-link active' : 'nav-link'
+                  toggleState === item.id ? 'nav-link active' : 'nav-link'
                 }
                 to={item.path}
-                onClick={() => toggleTab(item.section)}
+                onClick={() => toggleTab(item.id)}
               >
                 {item.name}
               </Link>

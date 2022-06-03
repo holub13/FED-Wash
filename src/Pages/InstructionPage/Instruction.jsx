@@ -9,7 +9,7 @@ const Instruction = ({ foo, getInfo, appState }) => {
 
   useLayoutEffect(() => {
     appState.map((item) => {
-      if (item.section === 'instruction') {
+      if (item.id === 'instruction') {
         setStateInstr(item.info)
       }
     })
