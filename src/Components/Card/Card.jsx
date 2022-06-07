@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom'
 
 import './Card.css'
 
-const Card = ({ title, content, foo, itemInfo }) => {
-  // const foo = (param) => {
-  //   console.log(param)
-  //   return param
-  // }
-  // console.log(title)
+const Card = ({ title, content, foo, itemInfo, id, appState, del }) => {
   return (
     <div className="card">
       <img
@@ -19,13 +14,22 @@ const Card = ({ title, content, foo, itemInfo }) => {
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{content}</p>
-        <Link
-          to={`/card-content/${title}`}
-          className="btn btn-secondary"
-          onClick={() => foo(itemInfo)}
-        >
-          Посмотреть информацию
-        </Link>
+        <div className="btn-group">
+          <Link
+            to={`/card-content/${title}`}
+            className="btn btn-secondary"
+            onClick={() => foo(itemInfo)}
+          >
+            Просмотр информации
+          </Link>
+          <button
+            type="submit"
+            className="btn btn-danger"
+            onClick={() => del(itemInfo.title)}
+          >
+            <i class="bi bi-trash3"></i>
+          </button>
+        </div>
       </div>
     </div>
   )

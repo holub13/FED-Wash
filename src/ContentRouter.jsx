@@ -7,9 +7,11 @@ import Instruction from './Pages/InstructionPage'
 import WelcomePage from './Pages/WelcomePage'
 import CardContent from './Pages/CardContent'
 import Login from './Pages/LoginPage/Login'
+import AddContent from './Pages/AddContent'
 
 const ContentRouter = ({ appState }) => {
   const [itemInfo, setItemInfo] = useState({})
+
   const foo = (param) => {
     setItemInfo(param)
     return param
@@ -17,8 +19,6 @@ const ContentRouter = ({ appState }) => {
   const getInfo = (info) => {
     return info
   }
-  // console.log(appState)
-  console.log(itemInfo)
 
   return (
     <Routes>
@@ -44,6 +44,7 @@ const ContentRouter = ({ appState }) => {
         element={<CardContent itemInfo={itemInfo} />}
       />
       <Route path={`/login`} element={<Login appState={appState} />} />
+      <Route path={`/addPage`} element={<AddContent appState={appState} />} />
     </Routes>
   )
 }

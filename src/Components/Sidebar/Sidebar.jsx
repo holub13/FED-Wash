@@ -5,25 +5,6 @@ import { Link } from 'react-router-dom'
 import './Sidebar.css'
 
 const Sidebar = ({ appState }) => {
-  // console.log(appState)
-  // const section = [
-  //   {
-  //     name: 'Техпроцесс',
-  //     id: 'techprocess',
-  //     path: '/techprocess',
-  //   },
-  //   {
-  //     name: 'Оборудование',
-  //     id: 'equipment',
-  //     path: '/equipment',
-  //   },
-  //   {
-  //     name: 'Инструкции',
-  //     id: 'instruction',
-  //     path: '/instruction',
-  //   },
-  // ]
-
   const [toggleState, setToggelState] = useState('')
 
   const toggleTab = (id) => {

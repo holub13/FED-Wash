@@ -1,3 +1,20 @@
 .navbar-dark .navbar-brand {
   color: #999999;
 }
+.navbar-nav {
+  flex-direction: row;
+}
+.icon {
+  font-size: 1.5rem;
+  color: #999999;
+}
+.log {
+  align-items: center;
+  color: #999999;
+}
+.log:hover,
+.log:focus,
+.icon:focus,
+.icon:hover {
+  color: #ffffff;
+}

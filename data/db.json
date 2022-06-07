@@ -6,59 +6,24 @@
       "path": "/techprocess",
       "info": [
         {
-          "title": "John",
-          "cardPath": "1",
-          "content": "ТП 1. Some quick example text to build on the card title and make up thebulk of the cards content 1"
-        },
-        {
-          "title": "Alex",
-          "cardPath": "2",
-          "content": "ТП 2. Some quick example text to build on the card title and make up thebulk of the cards content 2"
-        },
-        {
           "title": "Ivan Holub",
-          "cardPath": "3",
           "content": "ТП 3. Some quick example text to build on the card title and make up thebulk of the cards content 3"
         },
         {
-          "title": "Julia",
-          "cardPath": "4",
-          "content": "ТП 4. Some quick example text to build on the card title and make up thebulk of the cards content 4"
-        },
-        {
           "title": "Olha",
-          "cardPath": "5",
           "content": "ТП 5. Some quick example text to build on the card title and make up thebulk of the cards content 5"
         },
         {
-          "title": "Danil",
-          "cardPath": "6",
-          "content": "ТП 6. Some quick example text to build on the card title and make up thebulk of the cards content 6"
-        },
-        {
-          "title": "Kurt",
-          "cardPath": "7",
-          "content": "ТП 7. Some quick example text to build on the card title and make up thebulk of the cards content 7"
-        },
-        {
           "title": "Bill",
-          "cardPath": "8",
           "content": "ТП 8. Some quick example text to build on the card title and make up thebulk of the cards content 8"
         },
         {
-          "title": "1"
+          "title": "Julia2",
+          "content": "I love you.\nYou are moon of my life!!"
         },
         {
-          "title": "33"
-        },
-        {
-          "title": "123"
-        },
-        {
-          "title": "рападлпоад"
-        },
-        {
-          "title": "апвап"
+          "title": "asdsad",
+          "content": "asdasd </br>\nasdasd"
         }
       ]
     },
@@ -68,32 +33,20 @@
       "path": "/equipment",
       "info": [
         {
-          "title": "COSDOC",
-          "cardPath": "1",
-          "content": "Оборудование 1. Some quick example text to build on the card title"
-        },
-        {
           "title": "LVKLcvmlL",
-          "cardPath": "2",
           "content": "Оборудование 2. Some quick example text to build on the card title"
         },
         {
           "title": "UJIuoVH",
-          "cardPath": "3",
           "content": "Оборудование 3. Some quick example text to build on the card title"
         },
         {
           "title": "VUDHDIKVN",
-          "cardPath": "4",
           "content": "Оборудование 4. Some quick example text to build on the card title"
         },
         {
-          "title": "SdsdfvSFYUFY",
-          "cardPath": "5",
-          "content": "Оборудование 5. Some quick example text to build on the card title"
-        },
-        {
-          "title": "33222"
+          "title": "oioioioi",
+          "content": "khghjgjg"
         }
       ]
     },
@@ -103,37 +56,28 @@
       "path": "/instruction",
       "info": [
         {
-          "title": "13321",
-          "cardPath": "1",
-          "content": "Инструкция 1. Some quick example text to build on the card title"
-        },
-        {
           "title": "7894",
-          "cardPath": "2",
           "content": "Инструкция 2. Some quick example text to build on the card title"
         },
         {
           "title": "540578 Dsd",
-          "cardPath": "3",
           "content": "Инструкция 3. Some quick example text to build on the card title"
         },
         {
           "title": "809648",
-          "cardPath": "4",
           "content": "Инструкция 4. Some quick example text to build on the card title"
         },
         {
           "title": "sdcvsd54060",
-          "cardPath": "5",
           "content": "Инструкция 5. Some quick example text to build on the card title"
         },
         {
           "title": "SDdasd75064",
-          "cardPath": "6",
           "content": "Инструкция 6. Some quick example text to build on the card title"
         },
         {
-          "title": "123ввв"
+          "title": "Ivan",
+          "content": "Аззазазазазаз"
         }
       ]
     }

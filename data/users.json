@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": "qwerty",
+      "user": "Техпроцессы",
+      "password": "/techprocess"
+    },
+    {
+      "id": "asdfgh",
+      "user": "Оборудование",
+      "password": "/equipment"
+    },
+    {
+      "id": "zxcvbn",
+      "user": "Инструкции",
+      "password": "/instruction"
+    }
+  ]
+}

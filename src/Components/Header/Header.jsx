@@ -9,8 +9,11 @@ const Header = () => {
       <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
         <i>FED</i>
       </a>
-      <div className="navbar-nav">
-        <Link className="nav-link px-3" to="/login">
+      <div className="navbar ">
+        <Link className="nav-link px-3 icon nbbtns" to="/addPage">
+          <i class="bi bi-plus-circle-dotted"></i>
+        </Link>
+        <Link className="nav-link px-3 log nbbtns" to="/login">
           Login as admin
         </Link>
       </div>
